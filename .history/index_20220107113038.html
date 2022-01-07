@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CloudPool浊池</title>
+    <script src="waline/waline.js"></script>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <script>
+        function check() {
+            v = document.getElementsById("page")
+            window.location.href = v;
+        };
+
+    </script>
+</head>
+
+<body>
+    <div class="search">
+        <input type="text" placeholder="请输入..." name="" id="page" value="" />
+        <button onclick="check()">Go!</button>
+    </div>
+    
+    <div id="waline"></div>
+    <script>
+        Waline({
+            el: '#waline',
+            serverURL: 'https://one-comment.vercel.app/',
+            emoji: [
+                //    'waline/gh/walinejs/emojis@1.0.0/qq',
+                //    'waline/gh/walinejs/emojis@1.0.0/weibo',
+                //    'waline/gh/walinejs/emojis@1.0.0/tieba',
+                //    'waline/gh/walinejs/emojis@1.0.0/alus',
+                //    'waline/gh/walinejs/emojis@1.0.0/bilibili',
+                'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+                'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+                'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+                'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
+                'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+            ],
+            appId: 'z0aNhgPFYWIlcGL0ONwY1rNU-MdYXbMMI',
+            appKey: 'KgidpF8jI1RcVyCvaPyjyes4',
+            avatar: '0wtM2bADqSKOPS28qEiQPdzj',
+            IPQPS: 0,
+            placeholder: 'test',
+        });
+    </script>
+</body>
+
+</html>
