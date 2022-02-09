@@ -1,0 +1,152 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+/*总盒子*/
+.all_box {
+    background-size: cover;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./img/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.top {
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    text-align: left;
+}
+
+/*搜索盒子*/
+.search {
+    text-align: center;
+    height: auto;
+    padding-top: 30%;
+    background-color: transparent;
+    position: relative;
+}
+
+.search input {
+    height: 40px;
+}
+
+/*头部文字*/
+.search h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    padding-bottom: 40px;
+}
+
+.search h2 span {
+    font-weight: 900;
+    color: rgba(34, 122, 255, 0.54);
+}
+
+.topic:hover,
+.topic:focus {
+    box-shadow: 0px 0px 0px 0.5px #04b2f1;
+    background-color: #ffffff;
+    border: 0px;
+}
+
+.topic {
+    transition: all 0.25s;
+    border: 1px solid #222;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #ffffff;
+    outline: none;
+    padding: 0 44px;
+    box-sizing: border-box;
+    display: inline-block;
+    outline: none;
+    font: 14px arial, sans-serif;
+    background: none;
+}
+
+/*包含搜索框和图标盒子*/
+.input_box {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 2%;
+    top: 27%;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    /* 下面是分变率改字体*/
+    .search h2 span {
+        font-size: 15px;
+        font-weight: 900;
+        color: rgba(34, 137, 255, 0.54);
+    }
+
+    .search h2 {
+        font-size: 15px;
+    }
+
+    .all_box a {
+        font-size: 15px;
+    }
+
+    .item p {
+        font-size: 15px;
+    }
+
+    /* 下面是分变率改背景图片*/
+    .all_box {
+        background: url(./img/bg4.jpeg) no-repeat center;
+        background-size: cover;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.08);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.success {
+    color: #ff0000;
+    display: inline-block;
+    min-width: 33%;
+}
+
+.topic-content {
+    font-size: 18px;
+}
