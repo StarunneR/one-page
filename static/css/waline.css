@@ -1,5 +1,9 @@
+body {
+    background-color: #fff
+}
+
 .comment-box {
-    max-width: 1200px;
+    max-width: 1000px;
     margin-top: 50px;
 }
 
