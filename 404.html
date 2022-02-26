@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>浊池树洞</title>
-    <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+    <!--<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>-->
     <script src="./waline/waline-client.js"></script>
     <!--<link rel="shortcut icon" href="./favicon.ico" />-->
     <link rel="stylesheet" type="text/css" href="./static/css/main.css" />
@@ -24,12 +24,12 @@
                     //'waline/gh/walinejs/emojis_1.0.0/tieba',
                     //'waline/gh/walinejs/emojis_1.0.0/alus',
                     //'waline/gh/walinejs/emojis_1.0.0/bilibili',
-                    //'https://jsdelivr.cdn.iszy.xyz/gh/zvonimirsun/emojis@1.0.2/alus',
-                    //'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+                    //'https://jsdelivr.cdn.iszy.xyz/gh/zvonimirsun/emojis@1.0.2/bilibili-xhl',
                     //'https://gitee.com/cloudpool_admin/emojis/qq',
                     'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
                     'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
                     'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
+                    //'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
                     //'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
                 ],
                 appId: 'z0aNhgPFYWIlcGL0ONwY1rNU-MdYXbMMI',
@@ -37,7 +37,11 @@
                 avatar: 'hide',
                 IPQPS: 5,
                 placeholder: '来发评论吧',
-            })
+            });
+            var adao = document.createElement("button");
+            adao.className = "vaction"
+            adao.innerHTML = '<a class="vaction" title="A岛颜文字" href="http://emoji.voiiu.com" target="_blank"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" width="24px" height="24px">  <image id="image0" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAAAAAByaaZbAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN RQfmAhoIIjIo2/C8AAADS0lEQVRIx7WWf2hVZRjHn/ecM0mMNSNiNGNbMZlDu6ZF0FghFgz6ZSgk YTNcBQv8J8wgUgz/kCAVrKA/wkUG/ogFIrOoKDJKzYVU2g9pbBXYmDOTvN4f7/s+n/4497R7d491 L9Tz53uez/v8/J5zjEp9FtTp/18C1AsEdQLurDV1AGpOt50UrR1A3rGHU8tIB4imhl8bykXUCqjs vfrp6KTUDASy50np3J9WRCqgwadTD8sT30pYKyBDaxu5e+LzoDpElFZyw+TeVTuz11z+rFuDWiKo HGxZODn5fftwWk5aYc6pqpJ5HadcbD+B0xlWEQHCEFHzRa7Pq8s13vZB3FivntSUjD96JkBl912z iaIG6T0goYgQhZEhLSUeXdz1JvzSdgan6rnYcQqnjveX9Z/Fxz5lgOOTFYx0w9j++KHnxY9xjlOd Hw3cn1RT0dam36dGrxJtbYvbb3STIfAyduvya/sJqUrJsa2r5xjO2yRF61U9EwsH7niO0qEpnyVB LmqoWjiCX3cseCo5rgBEQ6V6lBgzvbeVgJAqS7z5e+Qz7kv1F8y0m6nhzWdExCVM9O/+4o/ml84V b0zVpFPNMTrPND50gngxAxG8i/PCeapVHND6w89Dl29fY0ONIwB455wHqA7gVUEZ6bx5HK8q6i68 ve4IoJx7o7frm5kKQNVDweLv6SziVRhbuaQp7FjUnelsvr6vZ2WyAokduQDPDGILZJtfwapgc/zU +MLm/g2vjli+m38u2eNSgPmHYKdswWd5ZBVFFVUKrNuCA2yO5VsrQjgym8hzKFpxCXoGYkAtwzdk XS7nYeLO1RTVW1eiLJszuCLjHTdtf3DuKK4kIBa8iyO7r1duOYZTBRIN/TZnO/kCU81LHjuOKynO srGHr/uum9X/ZRH15NZ3DZYIyz45SDHLA89jfSJRz3jLvNmZwT/BOy2ycdmHre+V+mt5WbYp+dZd FHQa+KPpvh9RrFVVy+rDPP4sxaSMA3MW7Vi8NB/HlLgXG2adx9oki13t62+cnqDl/Ev3br1UyjHu 0u7mPcmFqqq8tfarsnE4Bbwv07Q53dKk5doxQrn28IbQlAvI4Cteu57gSp/XGOAK2kyx6B+knGr/ /8/JX1W1RolPzk3TAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTAyLTI2VDA4OjM0OjUwKzAwOjAw Uz9L0gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wMi0yNlQwODozNDo1MCswMDowMCJi824AAAAA SUVORK5CYII="></image></svg></a>';
+            document.getElementsByClassName("vactions")[0].insertBefore(adao,document.getElementById("waline-image-upload"));
         </script>
     </div>
 </body>
